@@ -81,7 +81,6 @@ function getPositives(arr) {
   return result;
 }
 
-
 // 4. Feladat - Perdülj, fordulj!
 
 // Írj egy függvényt, ami a paraméterként megadott tömbjét valemlyik irányba "elforgatja"!
@@ -106,7 +105,6 @@ function rotate(direction, arr) {
     return arr;
   }
 }
-
 
 // 5. Feladat - Nagy (Betűs) Szavak
 
@@ -184,7 +182,6 @@ function logIn() {
   alert("Sikertelen bejelentkezés");
 }
 
-
 function changeEmail(currentEmail, newEmail) {
   for (let i = 0; i < users.length; ++i) {
     if (users[i].email == currentEmail) {
@@ -195,10 +192,10 @@ function changeEmail(currentEmail, newEmail) {
   console.log("Nincs ilyen email cím az adatbázisban");
 }
 
-
 function register(email, password, passwordConfirmation, firstName, lastName) {
   if (password != passwordConfirmation) {
     console.log("A jelszavak nem egyeznek");
+    return;
   }
   for (let i = 0; i < users.length; ++i) {
     if (users[i].email == email) {
@@ -214,7 +211,6 @@ function register(email, password, passwordConfirmation, firstName, lastName) {
   });
 }
 console.log(users);
-
 
 /*
   Mindenre válaszoltál? Átnézted? Patent?
