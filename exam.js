@@ -25,9 +25,7 @@
 // pl.: factorial(-2) -> undefined
 
 function factorial(num) {
-  if (num < 0) {
-    return;
-  }
+ 
   let result = 1;
   if (num == 0) {
     return 1;
