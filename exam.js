@@ -184,9 +184,10 @@ function logIn() {
   alert("Sikertelen bejelentkezés");
 }
 
+
 function changeEmail(currentEmail, newEmail) {
   for (let i = 0; i < users.length; ++i) {
-    if (users[i].Adress == currentEmail) {
+    if (users[i].email == currentEmail) {
       users[i].email = newEmail;
       return;
     }
@@ -194,10 +195,10 @@ function changeEmail(currentEmail, newEmail) {
   console.log("Nincs ilyen email cím az adatbázisban");
 }
 
+
 function register(email, password, passwordConfirmation, firstName, lastName) {
   if (password != passwordConfirmation) {
     console.log("A jelszavak nem egyeznek");
-    return;
   }
   for (let i = 0; i < users.length; ++i) {
     if (users[i].email == email) {
@@ -212,7 +213,10 @@ function register(email, password, passwordConfirmation, firstName, lastName) {
     lastName,
   });
 }
+console.log(users);
+
 
 /*
   Mindenre válaszoltál? Átnézted? Patent?
+  
 */
