@@ -103,6 +103,7 @@ function rotate(direction, arr) {
     return arr;
   }
 }
+console.log(rotate("right", [1, 2, 3]));
 
 // 5. Feladat - Nagy (Betűs) Szavak
 
